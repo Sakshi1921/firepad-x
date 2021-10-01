@@ -90,7 +90,7 @@ async function publishToNPM(tag) {
 
     console.log("Published package to NPM", stdout);
   } catch (err) {
-    console.log("Failed to publish to NPM registry.\n", err.stderr);
+    console.log("Failed to publish.\n", err.stderr);
     process.exit(ExitCodes.Success);
   }
 }
